@@ -14,3 +14,16 @@ In addition this project will include:
 * A production read me
 * A modal for instructions
 
+# Architecture and Technologies 
+
+* Javascript for game logic 
+* HTML5 for effects rendering
+* Potentially CSS for styling 
+* Canvas 
+
+# Implementation Timeline 
+
+* Day 1: Do all required setup inlcuding making an entry file, potentially setting up webpack. Try to locate neccessary assets for visual implementation and getting a good idea of general canvas use in conjuction with existing assets.
+
+*Day 2: 
+
