@@ -25,5 +25,9 @@ In addition this project will include:
 
 * Day 1: Do all required setup inlcuding making an entry file, potentially setting up webpack. Try to locate neccessary assets for visual implementation and getting a good idea of general canvas use in conjuction with existing assets.
 
-*Day 2: 
+* Day 2: Start rendering the grid using a board.js file. Make sure understanding of canvas and other technologies involved is concrete. Take this time to reaccomdate for other tools as need. Craft out logic for player movement on the grid. Make sure HTML5 is properly displaying the moving character. Plot out the attack logic and animation.
+
+* Day 3: Begin basic enemy model. Script out AI movement to be random as well as attacks. Make sure enemies are destroyed when attacked and that enemies still spawn on the board. Never flood the board over 3-4 enemies.
+
+* Day 4: Work on board logic for limited player spaces as time goes on. Ensure that any placeholders for styling are replaced with actual sprite assets. Any unaccounted for debugging.
 
