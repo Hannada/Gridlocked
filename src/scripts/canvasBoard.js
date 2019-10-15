@@ -1,26 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <title>Gridlocked</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        canvas {
-            background: #eee;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-
-<body>
-    <canvas id="myCanvas" width="720" height="480"></canvas>
-    <!-- <script>
             var boxWidth = 360;
             var boxHeight = 360;
             var padding = 10;
@@ -42,7 +19,3 @@
             }
 
          drawBoard();
-    </script> -->
-    <script src="./src/scripts/canvasBoard.js"></script>
-    <script src="./dist/main.js"></script>
-</body>
