@@ -1,0 +1,29 @@
+ #myCanvas {
+    background: darkgrey;
+    display: block;
+    margin: 0 auto;
+}
+
+#background {
+    background: maroon;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: flex-start; */
+}
+
+body {
+ height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: maroon;
+
+}
+
+#grid {
+    margin: 0 auto;
+}

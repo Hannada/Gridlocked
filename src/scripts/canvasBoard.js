@@ -14,7 +14,7 @@
                     context.moveTo(padding, 0.5 + x + padding);
                     context.lineTo(boxWidth + padding, 0.5 + x + padding);
                 }
-                context.strokeStyle = "black";
+                context.strokeStyle = "maroon";
                 context.stroke();
             }
 
