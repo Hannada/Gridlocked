@@ -1,30 +1,4 @@
-var x = canvas.width / 2;
-var y = canvas.height - 30;
-var dx = 2;
-var dy = -2;
 
-
-
-document.addEventListener("keydown", keyDownHandler, false);
-document.addEventListener("keyup", keyUpHandler, false);
-
-function keyDownHandler(e) {
-    if (e.key == "Right" || e.key == "ArrowRight") {
-        rightPressed = true;
-    }
-    else if (e.key == "Left" || e.key == "ArrowLeft") {
-        leftPressed = true;
-    }
-}
-
-function keyUpHandler(e) {
-    if (e.key == "Right" || e.key == "ArrowRight") {
-        rightPressed = false;
-    }
-    else if (e.key == "Left" || e.key == "ArrowLeft") {
-        leftPressed = false;
-    }
-}
 
 // if (rightPressed) {
 //     playerX += 7;
@@ -39,18 +13,23 @@ function keyUpHandler(e) {
 //     }
 // }
 
-function drawTestPlayer() {
-    ctx.beginPath();
-    ctx.rect(playerX, playerY, 50, 50);
-    ctx.fillStyle = "#FF0000";
-    ctx.fill();
-    ctx.closePath();
+
+
+class Player {
+    constructor(ctx){
+        this.ctx = ctx;
+        this.x = x; 
+        this.y = y; 
+        this.dx = dx;
+        this.dy = dy; 
+    }
+
+    drawTestPlayer() {
+        ctx.beginPath();
+        ctx.rect(playerX, playerY, 50, 50);
+        ctx.fillStyle = "#FF0000";
+        ctx.fill();
+        ctx.closePath();
+    }
 }
 
-// class Player {
-//     constructor(){
-
-//     }
-
-
-// }

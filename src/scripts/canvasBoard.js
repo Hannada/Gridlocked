@@ -19,3 +19,10 @@
             }
 
          drawBoard();
+
+class canvasBoard {
+    constructor(ctx){
+        this.ctx = ctx;
+        this.boxHeight = 360;
+    }
+}
