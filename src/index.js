@@ -1,5 +1,10 @@
-import "./styles/index.css"
+// import Game from "./scripts/game";
 
-window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('app').innerText = "Hello World!";
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const canvas = document.getElementById("myCanvas");
+    const context = canvas.getContext("2d");
+    canvas.width = 720;
+    canvas.height = 480;
 });
+

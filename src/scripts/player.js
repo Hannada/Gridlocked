@@ -35,6 +35,17 @@ class Player {
         this.image.src = "./assets/images/killercross.gif"
     }
 
- 
+    init() {
+        this.ctx.ctx.drawImage(img, 0, 0, 16, 18, 0, 0, 16, 18);
+    }
+    // drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight) {
+
+    // }
 }
+
+export default Player;
+
+
+
+// Working on sprite movement in separate doc
 
