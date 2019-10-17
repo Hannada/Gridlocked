@@ -1,6 +1,4 @@
-
-
-class Player {
+export default class Player {
     constructor(ctx){
         this.ctx = ctx;
 
@@ -97,5 +95,4 @@ class Player {
 }
 
 
-export default Player;
 
