@@ -96,9 +96,6 @@ class Player {
     }
 }
 
+
 export default Player;
-
-
-
-// Working on sprite movement in separate doc
 
