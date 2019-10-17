@@ -11,7 +11,7 @@ Gridlocked is a grid based survival shooter that draws heavy influence from the 
 * Players can move, attack and pause. 
 * All squares will be available in the initial state but will randomly block out after 15 seconds.
 * There will never be more than 3 blocked out squares at a time. 
-* Enemies will shoot slow moving projectiles that move horizontally across the grid. Enemy color will determine health and      bullet speed.
+* Enemies will shoot slow moving projectiles that move horizontally across the grid. Enemy color will determine health and bullet speed.
 
 In addition this project will include:
 
@@ -34,5 +34,12 @@ In addition this project will include:
 * Day 3: Render Player sprite on proper spot on the board with desired movement options. Start and finish the attack animation. 
 
 * Day 4: Begin basic enemy model. Script out AI movement to be random as well as attacks. Make sure enemies are destroyed when attacked and that enemies still spawn on the board. Never flood the board over 3-4 enemies.
+
+# Bonus Features 
+
+* Blocked squares 
+* Different character attacks
+* Different enemies
+* Smarter enemies 
 
 
