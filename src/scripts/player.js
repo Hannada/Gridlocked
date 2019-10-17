@@ -1,27 +1,5 @@
 
 
-// if (rightPressed) {
-//     playerX += 7;
-//     if (playerX + paddleWidth > canvas.width) {
-//         playerX = canvas.width - paddleWidth;
-//     }
-// }
-// else if (leftPressed) {
-//     playerX -= 7;
-//     if (playerX < 0) {
-//         playerX = 0;
-//     }
-// }
-// drawTestPlayer() {
-//     ctx.beginPath();
-//     ctx.rect(playerX, playerY, 50, 50);
-//     ctx.fillStyle = "#FF0000";
-//     ctx.fill();
-//     ctx.closePath();
-// }
-
-
-
 class Player {
     constructor(ctx){
         this.ctx = ctx;
@@ -110,12 +88,12 @@ class Player {
     }
 
 
-    // loadImage() {
-    //     img.src = './killercross.gif';
-    //     img.onload = function () {
-    //         window.requestAnimationFrame(gameLoop);
-    //     };
-    // }
+    loadImage() {
+        // img.src = './killercross.gif';
+        img.onload = function () {
+            window.requestAnimationFrame(gameLoop);
+        };
+    }
 }
 
 export default Player;
