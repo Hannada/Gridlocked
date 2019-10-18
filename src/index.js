@@ -1,5 +1,5 @@
 // import Game from "./scripts/player";
-// import Player from "./scripts/player";
+import Player from "./scripts/player";
 import "./styles/index.scss";
 // import axios from "axios";
 
@@ -23,15 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const HEIGHT = 72;
     const SCALED_WIDTH = SCALE * WIDTH;
     const SCALED_HEIGHT = SCALE * HEIGHT;
-    // const CYCLE_LOOP = [0, 1, 2, 3, 4];
     const CYCLE_LOOP = [1, 2, 3, 4];
     const FRAME_LIMIT = 6;
     const MOVEMENT_SPEED = 2;
 
-    // let canvas = document.querySelector('canvas');
-    // let ctx = canvas.getContext('2d');
+  
     let keyPresses = {};
-    // let currentLoopIndex = 0;
     let currentLoopIndex = 1;
     let frameCount = 0;
     let positionX = 0;
