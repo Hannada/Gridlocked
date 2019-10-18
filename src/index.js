@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas.height = 480;
     const ctx = canvas.getContext("2d");
 
-    const SCALE = 1.5;
+
+
+    const SCALE = 2;
     const WIDTH = 45;
     const HEIGHT = 72;
     const SCALED_WIDTH = SCALE * WIDTH;
@@ -35,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let positionX = 0;
     let positionY = 0;
     let img = new Image();
+    let img2 = new Image();
 
     window.addEventListener('keydown', keyDownListener);
     function keyDownListener(event) {
@@ -52,6 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
             window.requestAnimationFrame(gameLoop);
         };
     }
+    // function loadImage() {
+    //     img2.src = './assets/images/met.png';
+    //     img2.onload = function () {
+    //         window.requestAnimationFrame(gameLoop);
+    //     };
+    // }
 
     function drawFrame(frameX, frameY, canvasX, canvasY) {
         ctx.drawImage(img,
