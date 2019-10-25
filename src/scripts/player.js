@@ -18,6 +18,7 @@ export default class Player {
         this.positionY = 0;
         this.img = new Image();
         this.img.src = './assets/images/killercross.gif';
+        // this.img.onload = this.bind(this.img.onload)
         this.hasMoved = false;
         
     }
@@ -33,21 +34,23 @@ export default class Player {
             keyPresses[event.key] = false;
         }
     }
+
+
     
     loadImage() {
-        img.onload =  function() {window.requestAnimationFrame(gameLoop)}     
+        img.onload =  function init() {window.requestAnimationFrame(gameLoop)}     
     };
 
-
-
     drawFrame(frameX, frameY, canvasX, canvasY) {
-        ctx.drawImage(img,
-            frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,
-            canvasX, canvasY, SCALED_WIDTH, SCALED_HEIGHT);
+        this.ctx.drawImage(img, frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,canvasX, canvasY, SCALE * WIDTH, SCALE * HEIGHT);
+
     }
 
-    // function  gameLoop() {
-    // ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+
+    gameLoop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
 
     move (){
         if (keyPresses.w) {
@@ -83,7 +86,7 @@ export default class Player {
     // }
 
     // drawFrame(CYCLE_LOOP[currentLoopIndex], 0, positionX, positionY);
-    // window.requestAnimationFrame(gameLoop);
+    //     window.requestAnimationFrame(gameLoop);
     // }
 
     // function moveCharacter(deltaX, deltaY, direction) {

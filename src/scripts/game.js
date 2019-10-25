@@ -6,5 +6,7 @@ export default class Game {
         this.player = new Player; 
         this.board =  new Board;
     }
-    
+    render(){
+        this.player.loadImage();
+    }
 }

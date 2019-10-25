@@ -1,5 +1,6 @@
 import Game from "./scripts/game";
-// import Player from "./scripts/player";
+import Player from "./scripts/player";
+import test from "./scripts/test";
 import "./styles/index.scss";
 // import axios from "axios";
 
@@ -17,7 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = canvas.getContext("2d");
     document.body.appendChild(canvas);
 
+    // const player = new Player(ctx);
 
+    // player; 
+
+    // test(ctx); 
 
 
     // const SCALE = 2;
@@ -123,11 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    const playGame = () => {
-        const game = new Game(ctx);
-        // canvasEl.classList = '';
-        // game.requestAnimationFrame();
-    }
-    playGame();
+    // const playGame = () => {
+    //     const game = new Game(ctx);
+    //     // canvasEl.classList = '';
+    //     // game.requestAnimationFrame();
+    // }
+    // playGame();
+
    
 });
