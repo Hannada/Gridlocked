@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const FRAME_LIMIT = 6;
     const MOVEMENT_SPEED = 2;
 
+
+
+    // const SHOT_WIDTH = :
+    // const SHOT_HEIGHT = :
     const SHOT_LOOP = [10, 11, 12, 13]
 
 
