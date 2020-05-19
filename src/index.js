@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const FRAME_LIMIT = 6;
     const MOVEMENT_SPEED = 2;
 
+    const SHOT_LOOP = [10, 11, 12, 13]
+
+
   
     let keyPresses = {};
     let currentLoopIndex = 1;
@@ -73,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let hasMoved = false;
 
-        let hasShot = false; 
 
         if (keyPresses.w) {
             moveCharacter(0, -MOVEMENT_SPEED);
@@ -110,8 +112,18 @@ document.addEventListener('DOMContentLoaded', () => {
             currentLoopIndex = 0;
         }
 
+     
+
         drawFrame(CYCLE_LOOP[currentLoopIndex], 0, positionX, positionY);
         window.requestAnimationFrame(megaLoop);
+    }
+
+    function buster() {
+        let hasShot = false; 
+
+           // if (hasShot) {
+
+        // }
     }
 
     function moveCharacter(deltaX, deltaY, direction) {
