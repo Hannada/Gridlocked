@@ -2,6 +2,9 @@ import Game from "./scripts/game";
 import Player from "./scripts/player";
 import all from "./scripts/test";
 import "./styles/index.scss";
+
+// Curently none of the imports outside of styling are actually working.
+
 // import axios from "axios";
 
 // window.addEventListener("DOMContentLoaded", () => {
@@ -32,9 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    // const SHOT_WIDTH = :
-    // const SHOT_HEIGHT = :
-    // const SHOT_LOOP = [10, 11, 12, 13]
+    const SHOT_WIDTH = 45;
+    const SHOT_HEIGHT = 140;
+    const SHOT_LOOP = [1, 2, 3, 4]
 
 
   
