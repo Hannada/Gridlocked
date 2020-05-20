@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // const SHOT_WIDTH = :
     // const SHOT_HEIGHT = :
-    const SHOT_LOOP = [10, 11, 12, 13]
+    // const SHOT_LOOP = [10, 11, 12, 13]
 
 
   
@@ -125,9 +125,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function buster() {
         let hasShot = false; 
 
-           // if (hasShot) {
+        if (hasShot) {
+            frameCount++;
 
-        // }
+
+        }
     }
 
     function moveCharacter(deltaX, deltaY, direction) {
