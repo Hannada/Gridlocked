@@ -12,6 +12,8 @@ import "./styles/index.scss";
 //     axios.get("./search?").then(res => console.log(res));
 // });
 
+// Can potentially have a specialized draw function that goes over each object to render
+// See asteroids
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -153,11 +155,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    // const playGame = () => {
+    // const playGame = (ctx) => {
     //     const game = new Game(ctx);
     //     // canvasEl.classList = '';
     //     // game.requestAnimationFrame();
     // }
+
     // playGame();
 
    
