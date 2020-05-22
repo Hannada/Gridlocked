@@ -161,6 +161,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // axios.get("./search?").then(res => console.log(res));
 
 
+
+// ctx not being provided anywhere here
+
 // const playGame = (ctx) => {
     //     const game = new Game(ctx);
     //     // canvasEl.classList = '';
