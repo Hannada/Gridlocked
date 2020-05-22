@@ -17,6 +17,8 @@ import "./styles/index.scss";
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // The below is animating the mega sprite by itself
+
     const canvas = document.getElementById("myCanvas");
     canvas.width = 720;
     canvas.height = 480;
@@ -154,15 +156,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
     
-    // const playGame = (ctx) => {
-        //     const game = new Game(ctx);
-        //     // canvasEl.classList = '';
-        //     // game.requestAnimationFrame();
-        // }
-        
-        // playGame();
-        
-        
-    });
+});
+
+// axios.get("./search?").then(res => console.log(res));
+
+
+// const playGame = (ctx) => {
+    //     const game = new Game(ctx);
+    //     // canvasEl.classList = '';
+    //     // game.requestAnimationFrame();
+    // }
     
-    // axios.get("./search?").then(res => console.log(res));
+    // playGame();
