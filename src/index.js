@@ -151,17 +151,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    // axios.get("./search?").then(res => console.log(res));
-
-
-
+    
+    
+    
     // const playGame = (ctx) => {
-    //     const game = new Game(ctx);
-    //     // canvasEl.classList = '';
-    //     // game.requestAnimationFrame();
-    // }
-
-    // playGame();
-
-   
-});
+        //     const game = new Game(ctx);
+        //     // canvasEl.classList = '';
+        //     // game.requestAnimationFrame();
+        // }
+        
+        // playGame();
+        
+        
+    });
+    
+    // axios.get("./search?").then(res => console.log(res));
