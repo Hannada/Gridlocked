@@ -13,7 +13,8 @@ import "./styles/index.scss";
 // });
 
 // Can potentially have a specialized draw function that goes over each object to render
-// See asteroids
+
+// See asteroids for collision and packaging 
 
 document.addEventListener('DOMContentLoaded', () => {
 
