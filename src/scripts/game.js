@@ -7,7 +7,8 @@ export default class Game {
         this.board =  new Board; // Canvas board
     }
     render(){
-        this.player.loadImage();
+        // this.player.loadImage();
+        this.player
     }
 
     // Right now only the canvas is showing in index
