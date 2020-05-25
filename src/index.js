@@ -178,12 +178,14 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas.height = 480;
     const ctx = canvas.getContext("2d");
     document.body.appendChild(canvas);
+
     const playGame = (ctx) => {
             const game = new Game(ctx);
+            game.startAnimating();
             // canvasEl.classList = '';
             // game.requestAnimationFrame();
         }
         
-        playGame();
+        // playGame();
 
 });

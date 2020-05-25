@@ -9,4 +9,6 @@ export default class Game {
     render(){
         this.player.loadImage();
     }
+
+    // Right now only the canvas is showing in index
 }
