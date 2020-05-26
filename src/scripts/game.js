@@ -40,7 +40,23 @@ export default class Game {
             }
         }
     }
-    
+
+      // if (!hasMoved) {
+    //     currentLoopIndex = 0;
+    // }
+
+    // drawFrame(CYCLE_LOOP[currentLoopIndex], 0, positionX, positionY);
+    //     window.requestAnimationFrame(gameLoop);
+    // }
+
+    // function moveCharacter(deltaX, deltaY, direction) {
+    //     if (positionX + deltaX > 0 && positionX + SCALED_WIDTH + deltaX < canvas.width) {
+    //         positionX += deltaX;
+    //     }
+    //     if (positionY + deltaY > 0 && positionY + SCALED_HEIGHT + deltaY < canvas.height) {
+    //         positionY += deltaY;
+    //     }
+
     render(){
         // this.player.loadImage();
         this.player
