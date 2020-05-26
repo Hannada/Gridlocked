@@ -186,6 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // game.requestAnimationFrame();
         }
         
-        // playGame();
+        // this.playGame();
 
 });
