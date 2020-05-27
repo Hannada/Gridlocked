@@ -181,7 +181,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const playGame = (ctx) => {
             const game = new Game(ctx);
-            game.startAnimating();
+            // game.startAnimating();
+            game.start();
             // canvasEl.classList = '';
             // game.requestAnimationFrame();
         }
