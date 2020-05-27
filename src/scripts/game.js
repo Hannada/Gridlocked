@@ -35,6 +35,14 @@ export default class Game {
     //     img.onload = function init() { window.requestAnimationFrame(gameLoop) }
     // };
 
+
+    loadImage() {
+        img.src = './assets/images/killercross.gif';
+        img.onload = function () {
+            window.requestAnimationFrame(megaLoop);
+        };
+    }
+
     // drawFrame(frameX, frameY, canvasX, canvasY) {
     //     this.ctx.drawImage(img, frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT, canvasX, canvasY, SCALE * WIDTH, SCALE * HEIGHT);
 
@@ -92,7 +100,7 @@ export default class Game {
     //     }
 
     render(){
-        // this.player.loadImage();
+        // this.loadImage();
         this.player
     }
 
