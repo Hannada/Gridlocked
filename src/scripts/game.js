@@ -10,7 +10,41 @@ export default class Game {
 
         this.CYCLE_LOOP = [1, 2, 3, 4];
 
+        this.WIDTH = 45;
+        this.HEIGHT = 72;
+        // this.SCALED_WIDTH = SCALE * WIDTH;
+        // this.SCALED_HEIGHT = SCALE * HEIGHT;
+        this.CYCLE_LOOP = [1, 2, 3, 4];
+        this.FRAME_LIMIT = 6;
+        this.MOVEMENT_SPEED = 2;
+
+
+        this.keyPresses = {};
+        this.currentLoopIndex = 1;
+        this.frameCount = 0;
+        this.positionX = 0;
+        this.positionY = 0;
+        this.img = new Image();
+        this.img.src = './assets/images/killercross.gif';
+        // this.img.onload = this.bind(this.img.onload)
+        this.hasMoved = false;
+
     }
+
+    // loadImage() {
+    //     img.onload = function init() { window.requestAnimationFrame(gameLoop) }
+    // };
+
+    // drawFrame(frameX, frameY, canvasX, canvasY) {
+    //     this.ctx.drawImage(img, frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT, canvasX, canvasY, SCALE * WIDTH, SCALE * HEIGHT);
+
+    // }
+
+
+
+    // gameLoop() {
+    //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // }
 
     move() {
         if (keyPresses.w) {
