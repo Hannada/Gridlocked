@@ -6,6 +6,7 @@ class Game {
         this.ctx = ctx;
         this.player = new Player; // This is the player sprite
         this.board =  new Board; // Canvas board
+        this.playerRender = this.playerRender.bind(this);
 
 
         this.CYCLE_LOOP = [1, 2, 3, 4];
@@ -56,11 +57,11 @@ class Game {
 
     // Make a function that will start the animations
 
-    // gameStart() {
-    //     this.fps = 1000 / 60;
-    //     this.then = Date.now();
+    gameStart() {
+        this.fps = 1000 / 60;
+        this.then = Date.now();
 
-    // }
+    }
 
     // Uses a separate function to how hasmoved so it can request and animation frame
 
@@ -80,6 +81,8 @@ class Game {
         // if (!hasMoved) {
       //     currentLoopIndex = 0;
       // }
+
+      window.requestAnimationFrame(this.playerRender)
     }
 
     move() {
@@ -104,13 +107,16 @@ class Game {
     //     window.requestAnimationFrame(gameLoop);
     // }
 
-    // function moveCharacter(deltaX, deltaY, direction) {
-    //     if (positionX + deltaX > 0 && positionX + SCALED_WIDTH + deltaX < canvas.width) {
-    //         positionX += deltaX;
-    //     }
-    //     if (positionY + deltaY > 0 && positionY + SCALED_HEIGHT + deltaY < canvas.height) {
-    //         positionY += deltaY;
-    //     }
+    // Need to restructure this to include player
+
+    moveCharacter(deltaX, deltaY, direction) {
+        if (positionX + deltaX > 0 && positionX + SCALED_WIDTH + deltaX < canvas.width) {
+            positionX += deltaX;
+        }
+        if (positionY + deltaY > 0 && positionY + SCALED_HEIGHT + deltaY < canvas.height) {
+            positionY += deltaY;
+        }
+    }
 
     // render(){
     //     this.loadImage();
