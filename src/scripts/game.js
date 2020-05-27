@@ -54,6 +54,34 @@ class Game {
     //     ctx.clearRect(0, 0, canvas.width, canvas.height);
     // }
 
+    // Make a function that will start the animations
+
+    // gameStart() {
+    //     this.fps = 1000 / 60;
+    //     this.then = Date.now();
+
+    // }
+
+    // Uses a separate function to how hasmoved so it can request and animation frame
+
+    playerRender() {
+
+
+        if(hasMoved) {
+            frameCount++;
+            if (frameCount >= FRAME_LIMIT) {
+                frameCount = 0;
+                currentLoopIndex++;
+                if (currentLoopIndex >= CYCLE_LOOP.length) {
+                    currentLoopIndex = 0;
+                }
+            }
+        }
+        // if (!hasMoved) {
+      //     currentLoopIndex = 0;
+      // }
+    }
+
     move() {
         if (keyPresses.w) {
             moveCharacter(0, -MOVEMENT_SPEED);
@@ -71,21 +99,6 @@ class Game {
             hasMoved = true;
         }
     }
-
-    if(hasMoved) {
-        frameCount++;
-        if (frameCount >= FRAME_LIMIT) {
-            frameCount = 0;
-            currentLoopIndex++;
-            if (currentLoopIndex >= CYCLE_LOOP.length) {
-                currentLoopIndex = 0;
-            }
-        }
-    }
-
-      // if (!hasMoved) {
-    //     currentLoopIndex = 0;
-    // }
 
     // drawFrame(CYCLE_LOOP[currentLoopIndex], 0, positionX, positionY);
     //     window.requestAnimationFrame(gameLoop);
