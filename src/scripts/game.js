@@ -1,7 +1,7 @@
 import Player from "./player";
 import Board from "./canvasBoard";
 
-export default class Game {
+class Game {
     constructor(ctx){
         this.ctx = ctx;
         this.player = new Player; // This is the player sprite
@@ -99,10 +99,13 @@ export default class Game {
     //         positionY += deltaY;
     //     }
 
-    render(){
-        this.loadImage();
-        // this.player
-    }
+    // render(){
+    //     this.loadImage();
+    //     this.player
+    // }
+    // this.player.render();
 
     // Right now only the canvas is showing in index
 }
+
+export default Game;
