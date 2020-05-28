@@ -9,6 +9,11 @@ class Game {
         // this.playerRender = this.playerRender.bind(this);
     }
 
+    // Make sure the assets are being drawn on the canvas
+
+    // drawFrames(){
+
+    // }
 }
 
 export default Game;
