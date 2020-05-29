@@ -12,7 +12,10 @@ class Game {
     // Make sure the assets are being drawn on the canvas
 
     drawFrames(frameX, frameY, canvasX, canvasY){
-        this.ctx.drawImage(img, )
+        this.ctx.drawImage(img,
+            frameX * PlayerWidth, frameY * PlayerHeight, PlayerWidth, PlayerHeight,
+            canvasX, canvasY, SCALED_WIDTH, SCALED_HEIGHT 
+        )
     }
 
     //     function drawFrame(frameX, frameY, canvasX, canvasY) {
