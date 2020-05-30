@@ -18,6 +18,8 @@ class Game {
         )
     }
 
+    // Manages the frames
+
     gameStart() {
         this.fps = 1000 / 60;
         this.then = Date.now();
