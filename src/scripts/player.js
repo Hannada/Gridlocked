@@ -7,8 +7,8 @@ export default class Player {
         this.SCALE = 2;
         this.WIDTH = 45;
         this.HEIGHT = 72;
-        // this.SCALED_WIDTH = SCALE * WIDTH;
-        // this.SCALED_HEIGHT = SCALE * HEIGHT;
+        this.SCALED_WIDTH = SCALE * WIDTH;
+        this.SCALED_HEIGHT = SCALE * HEIGHT;
         this.CYCLE_LOOP = [1, 2, 3, 4];
         this.FRAME_LIMIT = 6;
         this.MOVEMENT_SPEED = 2;
