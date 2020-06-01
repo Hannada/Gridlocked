@@ -6,7 +6,7 @@ class Game {
         this.ctx = ctx;
         this.player = new Player; // This is the player sprite
         this.board =  new Board; // Canvas board
-        // this.playerRender = this.playerRender.bind(this);
+        this.playerRender = this.playerRender.bind(this);
     }
 
     // Make sure the assets are being drawn on the canvas
