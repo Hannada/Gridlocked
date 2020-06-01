@@ -21,6 +21,7 @@ export default class Player {
         this.positionY = 0;
         this.img = new Image();
         this.img.src = './assets/images/killercross.gif';
+        // this.sprite = new Sprite(this.image);
         // this.img.onload = this.bind(this.img.onload)
         this.hasMoved = false;
         
@@ -41,9 +42,9 @@ export default class Player {
 
 
     
-    loadImage() {
-        img.onload =  function init() {window.requestAnimationFrame(gameLoop)}     
-    };
+    // loadImage() {
+    //     img.onload =  function init() {window.requestAnimationFrame(gameLoop)}     
+    // };
 
     drawFrame(frameX, frameY, canvasX, canvasY) {
         this.ctx.drawImage(img, frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,canvasX, canvasY, SCALE * WIDTH, SCALE * HEIGHT);
