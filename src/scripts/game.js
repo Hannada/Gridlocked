@@ -7,6 +7,11 @@ class Game {
         this.player = new Player; // This is the player sprite
         this.board =  new Board; // Canvas board
         this.playerRender = this.playerRender.bind(this);
+
+        // Likely have to replace image with specific render or object?
+
+        // this.img = new Image();
+
     }
 
     // Make sure the assets are being drawn on the canvas
