@@ -21,7 +21,6 @@ export default class Player {
         this.positionY = 0;
         this.img = new Image();
         this.img.src = './assets/images/killercross.gif';
-        this.sprite = new Sprite(this.image);
         // this.img.onload = this.bind(this.img.onload)
         this.hasMoved = false;
         
