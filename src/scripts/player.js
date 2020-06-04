@@ -5,10 +5,13 @@ export default class Player {
 
         this.ctx = ctx 
         this.SCALE = 2;
-        this.WIDTH = 45;
-        this.HEIGHT = 72;
-        this.SCALED_WIDTH = SCALE * WIDTH;
-        this.SCALED_HEIGHT = SCALE * HEIGHT;
+
+        // Altering width and height naming to match sprite?
+        this.dw = 45;
+        this.dh = 72;
+        this.SCALED_WIDTH = SCALE * dw;
+        this.SCALED_HEIGHT = SCALE * dh;
+
         this.CYCLE_LOOP = [1, 2, 3, 4];
         this.FRAME_LIMIT = 6;
         this.MOVEMENT_SPEED = 2;
