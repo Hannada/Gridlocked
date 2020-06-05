@@ -82,16 +82,16 @@ export default class Player {
     //     }
     // }
 
-    if (hasMoved) {
-        frameCount++;
-        if (frameCount >= FRAME_LIMIT) {
-            frameCount = 0;
-            currentLoopIndex++;
-            if (currentLoopIndex >= CYCLE_LOOP.length) {
-                currentLoopIndex = 0;
-            }
-        }
-    }
+    // if (hasMoved) {
+    //     frameCount++;
+    //     if (frameCount >= FRAME_LIMIT) {
+    //         frameCount = 0;
+    //         currentLoopIndex++;
+    //         if (currentLoopIndex >= CYCLE_LOOP.length) {
+    //             currentLoopIndex = 0;
+    //         }
+    //     }
+    // }
 
     // if (!hasMoved) {
     //     currentLoopIndex = 0;
