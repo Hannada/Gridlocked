@@ -30,18 +30,18 @@ export default class Player {
         
     }
 
-    move(){
+    // move(){
         
-        document.addEventListener('keydown', keyDownListener);
-        function keyDownListener(event) {
-            keyPresses[event.key] = true;
-        }
+    //     document.addEventListener('keydown', keyDownListener);
+    //     function keyDownListener(event) {
+    //         keyPresses[event.key] = true;
+    //     }
         
-        document.addEventListener('keyup', keyUpListener);
-        function keyUpListener(event) {
-            keyPresses[event.key] = false;
-        }
-    }
+    //     document.addEventListener('keyup', keyUpListener);
+    //     function keyUpListener(event) {
+    //         keyPresses[event.key] = false;
+    //     }
+    // }
 
 
     
@@ -49,10 +49,14 @@ export default class Player {
     //     img.onload =  function init() {window.requestAnimationFrame(gameLoop)}     
     // };
 
-    drawFrame(frameX, frameY, canvasX, canvasY) {
-        this.ctx.drawImage(img, frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,canvasX, canvasY, SCALE * WIDTH, SCALE * HEIGHT);
+    // Looking to replace this with sprite function
 
-    }
+    // drawFrame(frameX, frameY, canvasX, canvasY) {
+    //     this.ctx.drawImage(img, frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,canvasX, canvasY, SCALE * WIDTH, SCALE * HEIGHT);
+
+    // }
+
+    // Try incorparatinf sprite.renderSprite for multiple sources
 
 
 
