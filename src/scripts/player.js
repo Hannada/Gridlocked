@@ -51,9 +51,14 @@ export default class Player {
 
     // Looking to replace this with sprite function
 
-    drawFrame(frameX, frameY, canvasX, canvasY) {
-        this.ctx.drawImage(img, frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,canvasX, canvasY, SCALE * WIDTH, SCALE * HEIGHT);
+    // drawFrame(frameX, frameY, canvasX, canvasY) {
+    //     this.ctx.drawImage(img, frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,canvasX, canvasY, SCALE * WIDTH, SCALE * HEIGHT);
 
+    // }
+
+    render() {
+        // This should call rendersprite
+        
     }
 
     // Try incorparating sprite.renderSprite for multiple sources
