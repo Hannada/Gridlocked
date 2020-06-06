@@ -58,7 +58,7 @@ export default class Player {
 
     render() {
         // This should call rendersprite
-        
+        // this.sprite.renderSprite()
     }
 
     // Try incorparating sprite.renderSprite for multiple sources
