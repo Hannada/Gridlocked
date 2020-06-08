@@ -43,7 +43,7 @@ export default class Player {
     //     }
     // }
 
-
+    // Load image might not be useful now
     
     // loadImage() {
     //     img.onload =  function init() {window.requestAnimationFrame(gameLoop)}     
