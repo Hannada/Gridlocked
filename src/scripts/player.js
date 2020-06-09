@@ -58,7 +58,7 @@ export default class Player {
 
     render() {
         // This should call rendersprite
-        this.sprite.renderSprite(sx, sy, sw, sh, dx, dy, dh, ctx)
+        this.sprite.renderSprite(sx, sy, this.SCALED_WIDTH, this.SCALED_HEIGHT, dx, dy, dh, ctx)
     }
 
     // Try incorparating sprite.renderSprite for multiple sources
