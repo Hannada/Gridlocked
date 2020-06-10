@@ -31,6 +31,10 @@ class Game {
 
     }
 
+    renderGame() {
+        // This function should collect the sprites to draw them.
+    }
+
 
 }
 
