@@ -28,6 +28,7 @@ class Game {
     gameStart() {
         this.fps = 1000 / 60;
         this.then = Date.now();
+        this.renderGame();
 
     }
 
