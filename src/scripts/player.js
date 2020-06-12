@@ -69,23 +69,23 @@ export default class Player {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 
-    move (){
-        if (keyPresses.w) {
-            moveCharacter(0, -MOVEMENT_SPEED);
-            hasMoved = true;
-        } else if (keyPresses.s) {
-            moveCharacter(0, MOVEMENT_SPEED);
-            hasMoved = true;
-        }
+    // move (){
+    //     if (keyPresses.w) {
+    //         moveCharacter(0, -MOVEMENT_SPEED);
+    //         hasMoved = true;
+    //     } else if (keyPresses.s) {
+    //         moveCharacter(0, MOVEMENT_SPEED);
+    //         hasMoved = true;
+    //     }
 
-        if (keyPresses.a) {
-            moveCharacter(-MOVEMENT_SPEED, 0);
-            hasMoved = true;
-        } else if (keyPresses.d) {
-            moveCharacter(MOVEMENT_SPEED, 0);
-            hasMoved = true;
-        }
-    }
+    //     if (keyPresses.a) {
+    //         moveCharacter(-MOVEMENT_SPEED, 0);
+    //         hasMoved = true;
+    //     } else if (keyPresses.d) {
+    //         moveCharacter(MOVEMENT_SPEED, 0);
+    //         hasMoved = true;
+    //     }
+    // }
 
     // if (hasMoved) {
     //     frameCount++;

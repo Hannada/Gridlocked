@@ -8,7 +8,7 @@ class Game {
         this.board =  new Board; // Canvas board
         this.playerRender = this.playerRender.bind(this);
 
-        // this.hasMoved
+        this.hasMoved = false; 
 
         // Likely have to replace image with specific render or object?
 
