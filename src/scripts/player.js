@@ -1,7 +1,6 @@
 export default class Player {
     constructor(ctx){
 
-        // Going to alter the ctx and move some info to game
 
         this.ctx = ctx 
         this.SCALE = 2;
