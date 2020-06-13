@@ -16,14 +16,14 @@ class Game {
 
     }
 
-    // Make sure the assets are being drawn on the canvas
+    // Make sure the assets are being drawn on the canvas. Frames should be drawn on their models?
 
-    drawFrames(frameX, frameY, canvasX, canvasY){
-        this.ctx.drawImage(img,
-            frameX * PlayerWidth, frameY * PlayerHeight, PlayerWidth, PlayerHeight,
-            canvasX, canvasY, SCALED_WIDTH, SCALED_HEIGHT 
-        )
-    }
+    // drawFrames(frameX, frameY, canvasX, canvasY){
+    //     this.ctx.drawImage(img,
+    //         frameX * PlayerWidth, frameY * PlayerHeight, PlayerWidth, PlayerHeight,
+    //         canvasX, canvasY, SCALED_WIDTH, SCALED_HEIGHT 
+    //     )
+    // }
 
     // Manages the frames
 
