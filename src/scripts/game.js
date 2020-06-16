@@ -38,6 +38,7 @@ class Game {
         // This function should collect the sprites to draw them.
         const now = Date.now();
         this.player.render; 
+        // if (this,move)
     }
 
     // Move logic might need to be here since game rules are here?
