@@ -36,6 +36,7 @@ class Game {
 
     renderGame() {
         // This function should collect the sprites to draw them.
+        const now = Date.now();
         this.player.render; 
     }
 
