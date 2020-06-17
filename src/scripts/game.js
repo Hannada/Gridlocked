@@ -37,10 +37,12 @@ class Game {
     renderGame() {
         // This function should collect the sprites to draw them.
         const now = Date.now();
-        this.player.render; 
-        // if (this.hasMoved) {
 
-        // }
+        // Make the renders conditional based on the move? Unsure if that should go here
+        if (this.hasMoved) {
+            this.player.render; 
+
+        }
     }
 
     // Move logic might need to be here since game rules are here?
