@@ -44,6 +44,7 @@ class Game {
         if (this.hasMoved) {
             this.player.render; 
             this.currentLoopIndex += 1
+            // window.requestAnimationFrame(this.player.render)
         } else {
             this.currentLoopIndex = 0
         }
