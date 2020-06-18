@@ -43,7 +43,9 @@ class Game {
         // Make the renders conditional based on the move? Unsure if that should go here
         if (this.hasMoved) {
             this.player.render; 
-
+            this.currentLoopIndex += 1
+        } else {
+            this.currentLoopIndex = 0
         }
     }
 
