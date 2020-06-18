@@ -9,6 +9,8 @@ class Game {
         this.playerRender = this.playerRender.bind(this);
 
         this.hasMoved = false; 
+        this.currentLoopIndex = 1;
+
 
         // Likely have to replace image with specific render or object?
 
