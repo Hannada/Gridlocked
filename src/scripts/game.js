@@ -70,6 +70,24 @@ class Game {
         }
     }
 
+    // move() {
+    //     if (keyPresses.w) {
+    //         moveCharacter(0, -MOVEMENT_SPEED);
+    //         hasMoved = true;
+    //     } else if (keyPresses.s) {
+    //         moveCharacter(0, MOVEMENT_SPEED);
+    //         hasMoved = true;
+    //     }
+
+    //     if (keyPresses.a) {
+    //         moveCharacter(-MOVEMENT_SPEED, 0);
+    //         hasMoved = true;
+    //     } else if (keyPresses.d) {
+    //         moveCharacter(MOVEMENT_SPEED, 0);
+    //         hasMoved = true;
+    //     }
+    // }
+
     // if (hasMoved) {
     //     frameCount++;
     //     if (frameCount >= FRAME_LIMIT) {
