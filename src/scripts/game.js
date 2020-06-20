@@ -56,6 +56,7 @@ class Game {
         if (keyPresses.w) {
             moveCharacter(0, -MOVEMENT_SPEED);
             hasMoved = true;
+            this.player.render;
             // Place render here?
         } else if (keyPresses.s) {
             moveCharacter(0, MOVEMENT_SPEED);
