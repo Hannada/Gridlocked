@@ -57,6 +57,10 @@ class Game {
             moveCharacter(0, -MOVEMENT_SPEED);
             hasMoved = true;
             this.player.render;
+
+            // Need to clean the slate?
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
             // Place render here?
         } else if (keyPresses.s) {
             moveCharacter(0, MOVEMENT_SPEED);
