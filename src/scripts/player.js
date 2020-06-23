@@ -24,7 +24,7 @@ export default class Player {
         this.img = new Image();
         this.img.src = './assets/images/killercross.gif';
         this.sprite = new Sprite(this.image);
-        // this.img.onload = this.bind(this.img.onload)
+        this.img.onload = this.bind(this.img.onload)
         this.hasMoved = false;
         
     }
@@ -44,9 +44,9 @@ export default class Player {
 
     // Load image might not be useful now
     
-    // loadImage() {
-    //     img.onload =  function init() {window.requestAnimationFrame(gameLoop)}     
-    // };
+    loadImage() {
+        img.onload =  function init() {window.requestAnimationFrame(gameLoop)}     
+    };
 
     // Looking to replace this with sprite function
 
