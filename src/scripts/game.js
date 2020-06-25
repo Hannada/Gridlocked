@@ -65,14 +65,20 @@ class Game {
         } else if (keyPresses.s) {
             moveCharacter(0, MOVEMENT_SPEED);
             hasMoved = true;
+            this.player.render;
+
         }
 
         if (keyPresses.a) {
             moveCharacter(-MOVEMENT_SPEED, 0);
             hasMoved = true;
+            this.player.render;
+
         } else if (keyPresses.d) {
             moveCharacter(MOVEMENT_SPEED, 0);
             hasMoved = true;
+            this.player.render;
+
         }
     }
 
