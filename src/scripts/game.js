@@ -59,7 +59,8 @@ class Game {
             this.player.render;
 
             // Need to clean the slate?
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // May need to clear for size of player model
+            ctx.clearRect(0, 0, 0, 0);
 
             // Place render here?
         } else if (keyPresses.s) {
