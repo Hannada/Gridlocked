@@ -42,12 +42,15 @@ class Game {
 
         // Make the renders conditional based on the move? Unsure if that should go here
         if (this.hasMoved) {
-            this.player.render; 
+            // this.player.render; 
             this.currentLoopIndex += 1
             // window.requestAnimationFrame(this.player.render)
         } else {
             this.currentLoopIndex = 0
         }
+
+        // The actual assets still need to be rendered in here to pass over to index.
+        this.player.playerRender();
     }
 
     // Move logic might need to be here since game rules are here?
