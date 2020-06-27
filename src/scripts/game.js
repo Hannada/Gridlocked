@@ -51,6 +51,8 @@ class Game {
 
         // The actual assets still need to be rendered in here to pass over to index.
         this.player.playerRender();
+            // ctx.clearRect(0, 0, 0, 0);
+
     }
 
     // Move logic might need to be here since game rules are here?
@@ -63,7 +65,7 @@ class Game {
 
             // Need to clean the slate?
             // May need to clear for size of player model
-            ctx.clearRect(0, 0, 0, 0);
+            // ctx.clearRect(0, 0, 0, 0);
 
             // Place render here?
         } else if (keyPresses.s) {
