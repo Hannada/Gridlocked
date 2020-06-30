@@ -51,7 +51,8 @@ class Game {
 
         // The actual assets still need to be rendered in here to pass over to index.
         this.player.playerRender();
-            // ctx.clearRect(0, 0, 0, 0);
+        ctx.clearRect(0, 0, 0, 0);
+        // window.requestAnimationFrame(this.renderGame)
 
     }
 
