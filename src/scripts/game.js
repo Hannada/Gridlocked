@@ -37,7 +37,7 @@ class Game {
     }
 
     playerRender() {
-        
+        this.player.render();
     }
 
     renderGame() {
