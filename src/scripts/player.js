@@ -58,6 +58,7 @@ export default class Player {
     render() {
         // This should call rendersprite
         this.sprite.renderSprite(sx, sy, this.SCALED_WIDTH, this.SCALED_HEIGHT, dx, dy, dh, ctx)
+        // Above sprite render might not need dy?
     }
 
     // Try incorparating sprite.renderSprite for multiple sources
