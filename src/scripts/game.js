@@ -38,7 +38,7 @@ class Game {
 
     playerRender() {
         this.player.render();
-        // This should trigger the render method in player
+        // This should trigger the render method in player 
     }
 
     renderGame() {
@@ -57,7 +57,7 @@ class Game {
         // The actual assets still need to be rendered in here to pass over to index.
         this.player.playerRender();
         return 
-        // ctx.clearRect(0, 0, 0, 0);
+        ctx.clearRect(0, 0, 0, 0);
         // window.requestAnimationFrame(this.renderGame)
 
     }
