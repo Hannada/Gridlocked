@@ -10,7 +10,9 @@ class Game {
 
         this.hasMoved = false; 
         this.currentLoopIndex = 1;
-        // this.MOVEMENT_SPEED
+
+        // This is also in player model
+        this.MOVEMENT_SPEED = 2;
 
 
         // Likely have to replace image with specific render or object?
