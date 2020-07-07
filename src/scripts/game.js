@@ -10,6 +10,7 @@ class Game {
 
         this.hasMoved = false; 
         this.currentLoopIndex = 1;
+        // this.MOVEMENT_SPEED
 
 
         // Likely have to replace image with specific render or object?
@@ -56,7 +57,7 @@ class Game {
 
         // The actual assets still need to be rendered in here to pass over to index.
         this.player.playerRender();
-        return 
+        // return 
         ctx.clearRect(0, 0, 0, 0);
         // window.requestAnimationFrame(this.renderGame)
 
