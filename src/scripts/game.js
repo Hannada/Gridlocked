@@ -4,7 +4,7 @@ import Board from "./canvasBoard";
 class Game {
     constructor(ctx){
         this.ctx = ctx;
-        this.player = new Player(ctx); // This is the player sprite
+        this.player = new Player(ctx); // This is the player sprite, might need sizes
         this.board =  new Board; // Canvas board
         this.playerRender = this.playerRender.bind(this);
 
@@ -13,7 +13,7 @@ class Game {
 
         // This is also in player model
         this.MOVEMENT_SPEED = 2;
-        this.frameCount = 0;
+        // this.frameCount = 0;
 
 
 
