@@ -13,6 +13,8 @@ class Game {
 
         // This is also in player model
         this.MOVEMENT_SPEED = 2;
+        this.frameCount = 0;
+
 
 
         // Likely have to replace image with specific render or object?
