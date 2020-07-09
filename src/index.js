@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = canvas.getContext("2d");
     document.body.appendChild(canvas);
 
-    const playGame = (ctx) => {
+    const playGame = () => {
             const game = new Game(ctx);
             game.gameStart();
             // game.startAnimating();
@@ -188,6 +188,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // game.requestAnimationFrame();
         }
         
-        // this.playGame();
+        this.playGame();
 
 });
