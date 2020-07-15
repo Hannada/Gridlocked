@@ -76,7 +76,6 @@ class Game {
             this.player.render;
 
             // May need to clear for size of player model
-            // ctx.clearRect(0, 0, 0, 0);
 
         } else if (keyPresses.s) {
             moveCharacter(0, MOVEMENT_SPEED);
