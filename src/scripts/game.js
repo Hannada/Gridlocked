@@ -43,7 +43,6 @@ class Game {
 
     playerRender() {
         this.player.render();
-        // This should trigger the render method in player 
     }
 
     renderGame() {
