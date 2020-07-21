@@ -95,6 +95,7 @@ class Game {
             hasMoved = true;
             // this.player.render;
             this.playerRender();
+            // Unsure if these are the correct render. Likely the same.
 
 
         }
