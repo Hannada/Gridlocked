@@ -19,7 +19,7 @@ class Game {
 
         // Likely have to replace image with specific render or object?
 
-        // this.img = new Image();
+        this.img = new Image();
 
     }
 
