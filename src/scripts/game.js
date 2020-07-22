@@ -23,7 +23,6 @@ class Game {
 
     }
 
-    // Make sure the assets are being drawn on the canvas. Frames should be drawn on their models?
 
     // drawFrames(frameX, frameY, canvasX, canvasY){
     //     this.ctx.drawImage(img,
