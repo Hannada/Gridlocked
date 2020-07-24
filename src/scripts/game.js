@@ -11,7 +11,7 @@ class Game {
         this.hasMoved = false; 
         this.currentLoopIndex = 1;
 
-        // This is also in player model
+    
         this.MOVEMENT_SPEED = 2;
         // this.frameCount = 0;
 
