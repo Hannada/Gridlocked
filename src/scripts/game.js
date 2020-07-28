@@ -5,7 +5,7 @@ class Game {
     constructor(ctx){
         this.ctx = ctx;
         this.player = new Player(ctx); // This is the player sprite, might need sizes
-        this.board =  new Board; // Canvas board
+        this.board =  new Board; // Not in use yet. Likely where grid will be
         this.playerRender = this.playerRender.bind(this);
 
         this.hasMoved = false; 
