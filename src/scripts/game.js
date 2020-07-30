@@ -13,7 +13,7 @@ class Game {
 
     
         this.MOVEMENT_SPEED = 2;
-        // this.frameCount = 0;
+        this.frameCount = 0;
 
 
 
