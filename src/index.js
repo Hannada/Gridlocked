@@ -185,6 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
         
-        // this.playGame();
+        this.playGame();
 
 });
