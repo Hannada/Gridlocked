@@ -171,16 +171,21 @@ import "./styles/index.scss";
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // The below is animating the mega sprite by itself
-
     const canvas = document.getElementById("myCanvas");
     canvas.width = 720;
     canvas.height = 480;
     const ctx = canvas.getContext("2d");
-    document.body.appendChild(canvas);
+
+    // document.body.appendChild(canvas);
+
+    // debugger 
+
+    // Current playgame is not being hit
 
     const playGame = () => {
+            // debugger
             const game = new Game(ctx);
+            canvas.classList = '';
             game.gameStart();
 
         }

@@ -22,7 +22,7 @@
 export default class canvasBoard {
     constructor(ctx){
         this.ctx = ctx;
-        this.boxHeight = 360
+        this.boxHeight = 720
         this.boxWidth = 360
     }
 
