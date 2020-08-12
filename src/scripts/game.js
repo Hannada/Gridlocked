@@ -23,12 +23,12 @@ class Game {
     }
 
 
-    drawFrames(frameX, frameY, canvasX, canvasY){
-        this.ctx.drawImage(img,
-            frameX * PlayerWidth, frameY * PlayerHeight, PlayerWidth, PlayerHeight,
-            canvasX, canvasY, SCALED_WIDTH, SCALED_HEIGHT 
-        )
-    }
+    // drawFrames(frameX, frameY, canvasX, canvasY){
+    //     this.ctx.drawImage(img,
+    //         frameX * PlayerWidth, frameY * PlayerHeight, PlayerWidth, PlayerHeight,
+    //         canvasX, canvasY, SCALED_WIDTH, SCALED_HEIGHT 
+    //     )
+    // }
 
 
     gameStart() {
