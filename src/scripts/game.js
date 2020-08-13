@@ -36,6 +36,8 @@ class Game {
         this.then = Date.now();
         this.renderGame();
 
+        // This should start the animation loop
+
     }
 
     playerRender() {
