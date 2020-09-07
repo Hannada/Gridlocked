@@ -18,7 +18,7 @@ class Game {
 
 
 
-        // this.img = new Image();
+        this.img = new Image();
 
     }
 
