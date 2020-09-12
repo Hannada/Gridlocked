@@ -27,7 +27,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "express": "^4.15.3",
-    "node-fetch": "^1.7.3",
+    "node-fetch": "^2.6.1",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.0.0",
