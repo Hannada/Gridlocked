@@ -18,139 +18,139 @@ import "./styles/index.scss";
 
 // See asteroids for collision and packaging 
 
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-//     // The below is animating the mega sprite by itself
+    // The below is animating the mega sprite by itself
 
-//     const canvas = document.getElementById("myCanvas");
-//     canvas.width = 720;
-//     canvas.height = 480;
-//     const ctx = canvas.getContext("2d");
-//     document.body.appendChild(canvas);
-
-
-
-
-//     const SCALE = 2;
-//     const WIDTH = 45;
-//     const HEIGHT = 72;
-//     const SCALED_WIDTH = SCALE * WIDTH;
-//     const SCALED_HEIGHT = SCALE * HEIGHT;
-//     const CYCLE_LOOP = [1, 2, 3, 4];
-//     const FRAME_LIMIT = 6;
-//     const MOVEMENT_SPEED = 2;
+    const canvas = document.getElementById("myCanvas");
+    canvas.width = 720;
+    canvas.height = 480;
+    const ctx = canvas.getContext("2d");
+    document.body.appendChild(canvas);
 
 
 
-//     const SHOT_WIDTH = 45;
-//     const SHOT_HEIGHT = 140;
-//     const SHOT_LOOP = [1, 2, 3, 4]
+
+    const SCALE = 2;
+    const WIDTH = 45;
+    const HEIGHT = 72;
+    const SCALED_WIDTH = SCALE * WIDTH;
+    const SCALED_HEIGHT = SCALE * HEIGHT;
+    const CYCLE_LOOP = [1, 2, 3, 4];
+    const FRAME_LIMIT = 6;
+    const MOVEMENT_SPEED = 2;
+
+
+
+    const SHOT_WIDTH = 45;
+    const SHOT_HEIGHT = 140;
+    const SHOT_LOOP = [1, 2, 3, 4]
 
 
   
-//     let keyPresses = {};
-//     let currentLoopIndex = 1;
-//     let frameCount = 0;
-//     let positionX = 0;
-//     let positionY = 0;
-//     let img = new Image();
-//     var lastTime;
+    let keyPresses = {};
+    let currentLoopIndex = 1;
+    let frameCount = 0;
+    let positionX = 0;
+    let positionY = 0;
+    let img = new Image();
+    var lastTime;
 
 
-//     window.addEventListener('keydown', keyDownListener);
-//     function keyDownListener(event) {
-//         keyPresses[event.key] = true;
-//     }
+    window.addEventListener('keydown', keyDownListener);
+    function keyDownListener(event) {
+        keyPresses[event.key] = true;
+    }
 
-//     window.addEventListener('keyup', keyUpListener);
-//     function keyUpListener(event) {
-//         keyPresses[event.key] = false;
-//     }
+    window.addEventListener('keyup', keyUpListener);
+    function keyUpListener(event) {
+        keyPresses[event.key] = false;
+    }
 
-//     function loadImage() {
-//         img.src = './assets/images/killercross.gif';
-//         img.onload = function () {
-//             window.requestAnimationFrame(megaLoop);
-//         };
-//     }
-
-
-//     function drawFrame(frameX, frameY, canvasX, canvasY) {
-//         ctx.drawImage(img,
-//             frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,
-//             canvasX, canvasY, SCALED_WIDTH, SCALED_HEIGHT);
-//     }
-
-//     loadImage();
+    function loadImage() {
+        img.src = './assets/images/killercross.gif';
+        img.onload = function () {
+            window.requestAnimationFrame(megaLoop);
+        };
+    }
 
 
+    function drawFrame(frameX, frameY, canvasX, canvasY) {
+        ctx.drawImage(img,
+            frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,
+            canvasX, canvasY, SCALED_WIDTH, SCALED_HEIGHT);
+    }
 
-//     function megaLoop() {
-//         ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-//         let hasMoved = false;
+    loadImage();
 
 
-//         if (keyPresses.w) {
-//             moveCharacter(0, -MOVEMENT_SPEED);
-//             hasMoved = true;
-//         } else if (keyPresses.s) {
-//             moveCharacter(0, MOVEMENT_SPEED);
-//             hasMoved = true;
-//         }
 
-//         if (keyPresses.a) {
-//             moveCharacter(-MOVEMENT_SPEED, 0);
-//             hasMoved = true;
-//         } else if (keyPresses.d) {
-//             moveCharacter(MOVEMENT_SPEED, 0);
-//             hasMoved = true;
-//         }
+    function megaLoop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-//         // if (keyPresses.b) {
+        let hasMoved = false;
 
-//         // }
 
-//         if (hasMoved) {
-//             frameCount++;
-//             if (frameCount >= FRAME_LIMIT) {
-//                 frameCount = 0;
-//                 currentLoopIndex++;
-//                 if (currentLoopIndex >= CYCLE_LOOP.length) {
-//                     currentLoopIndex = 0;
-//                 }
-//             }
-//         }
+        if (keyPresses.w) {
+            moveCharacter(0, -MOVEMENT_SPEED);
+            hasMoved = true;
+        } else if (keyPresses.s) {
+            moveCharacter(0, MOVEMENT_SPEED);
+            hasMoved = true;
+        }
 
-//         if (!hasMoved) {
-//             currentLoopIndex = 0;
-//         }
+        if (keyPresses.a) {
+            moveCharacter(-MOVEMENT_SPEED, 0);
+            hasMoved = true;
+        } else if (keyPresses.d) {
+            moveCharacter(MOVEMENT_SPEED, 0);
+            hasMoved = true;
+        }
+
+        // if (keyPresses.b) {
+
+        // }
+
+        if (hasMoved) {
+            frameCount++;
+            if (frameCount >= FRAME_LIMIT) {
+                frameCount = 0;
+                currentLoopIndex++;
+                if (currentLoopIndex >= CYCLE_LOOP.length) {
+                    currentLoopIndex = 0;
+                }
+            }
+        }
+
+        if (!hasMoved) {
+            currentLoopIndex = 0;
+        }
 
      
 
-//         drawFrame(CYCLE_LOOP[currentLoopIndex], 0, positionX, positionY);
-//         window.requestAnimationFrame(megaLoop);
-//     }
+        drawFrame(CYCLE_LOOP[currentLoopIndex], 0, positionX, positionY);
+        window.requestAnimationFrame(megaLoop);
+    }
 
-//     function buster() {
-//         let hasShot = false; 
+    function buster() {
+        let hasShot = false; 
 
-//         if (hasShot) {
-//             frameCount++;
+        if (hasShot) {
+            frameCount++;
 
 
-//         }
-//     }
+        }
+    }
 
-//     function moveCharacter(deltaX, deltaY, direction) {
-//         if (positionX + deltaX > 0 && positionX + SCALED_WIDTH + deltaX < canvas.width) {
-//             positionX += deltaX;
-//         }
-//         if (positionY + deltaY > 0 && positionY + SCALED_HEIGHT + deltaY < canvas.height) {
-//             positionY += deltaY;
-//         }
-//         // currentDirection = direction;
-//     }
+    function moveCharacter(deltaX, deltaY, direction) {
+        if (positionX + deltaX > 0 && positionX + SCALED_WIDTH + deltaX < canvas.width) {
+            positionX += deltaX;
+        }
+        if (positionY + deltaY > 0 && positionY + SCALED_HEIGHT + deltaY < canvas.height) {
+            positionY += deltaY;
+        }
+        // currentDirection = direction;
+    }
 
     
 
@@ -169,18 +169,20 @@ import "./styles/index.scss";
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
+// Current version below
 
-    const canvas = document.getElementById("myCanvas");
-    canvas.width = 720;
-    canvas.height = 480;
-    const ctx = canvas.getContext("2d");
+// document.addEventListener('DOMContentLoaded', () => {
 
-    // document.body.appendChild(canvas);
+//     const canvas = document.getElementById("myCanvas");
+//     canvas.width = 720;
+//     canvas.height = 480;
+//     const ctx = canvas.getContext("2d");
 
-    // debugger 
+//     // document.body.appendChild(canvas);
 
-    // Current playgame is not being hit
+//     // debugger 
+
+//     // Current playgame is not being hit
 
     const playGame = () => {
             // debugger
