@@ -185,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //     // Current playgame is not being hit
 
     const playGame = () => {
-            // debugger
             const game = new Game(ctx);
             canvas.classList = '';
             game.gameStart();
